@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Game UID</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0a0a1a;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .banner {
+            background-color: #001f3f;
+            text-align: center;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+        .banner img {
+            max-width: 100%;
+            height: auto;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #4da6ff;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 5px;
+            border: 1px solid #4da6ff;
+            background-color: #001a33;
+            color: white;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        .submit-btn {
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: #0052a3;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <img src="https://i.postimg.cc/6QhgC3kb/image-search-1752245026702.png" alt="Banner">
+    </div>
+    
+    <div class="container">
+        <h1>ENTER YOUR GAME UID</h1>
+        
+        <div class="form-group">
+            <label for="uid">Game UID:</label>
+            <input type="text" id="uid" placeholder="Enter your game UID" required>
+        </div>
+        
+        <button class="submit-btn" onclick="window.location.href='payment.html'">PROCEED TO PAYMENT</button>
+    </div>
+</body>
+</html>

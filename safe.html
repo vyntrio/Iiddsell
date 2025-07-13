@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Transfer</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #0a0a1a;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            background-image: radial-gradient(circle at 10% 20%, #001f3f 0%, #000000 90%);
+        }
+        .banner {
+            background: linear-gradient(90deg, #001f3f 0%, #003366 100%);
+            text-align: center;
+            padding: 15px 0;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0, 60, 120, 0.5);
+        }
+        .banner img {
+            max-width: 90%;
+            height: auto;
+            max-height: 100px;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: rgba(0, 20, 40, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 8px 24px rgba(0, 60, 120, 0.3);
+            border: 1px solid #004080;
+        }
+        h1 {
+            color: #4da6ff;
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 28px;
+            text-shadow: 0 2px 4px rgba(0, 150, 255, 0.3);
+        }
+        .message {
+            background: rgba(0, 40, 80, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 25px 0;
+            border-left: 4px solid #0066cc;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .qr-code {
+            margin: 25px auto;
+            width: 80%;
+            padding: 15px;
+            background-color: rgba(0, 60, 120, 0.3);
+            border-radius: 10px;
+            border: 1px dashed #4da6ff;
+        }
+        .qr-code img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .form-group {
+            margin-bottom: 25px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #8cb3d9;
+        }
+        input {
+            width: 100%;
+            padding: 14px;
+            border-radius: 8px;
+            border: 1px solid #0066cc;
+            background-color: rgba(0, 30, 60, 0.7);
+            color: white;
+            font-size: 16px;
+            box-sizing: border-box;
+            transition: all 0.3s;
+        }
+        input:focus {
+            outline: none;
+            border-color: #4da6ff;
+            box-shadow: 0 0 0 2px rgba(0, 150, 255, 0.3);
+            background-color: rgba(0, 40, 80, 0.8);
+        }
+        .submit-btn {
+            background: linear-gradient(135deg, #0066cc 0%, #004080 100%);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            width: 100%;
+            transition: all 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 60, 120, 0.4);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .submit-btn:hover {
+            background: linear-gradient(135deg, #0077e6 0%, #0052a3 100%);
+            box-shadow: 0 6px 12px rgba(0, 80, 160, 0.5);
+            transform: translateY(-2px);
+        }
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+        .note {
+            font-size: 14px;
+            color: #8cb3d9;
+            margin-top: 25px;
+            text-align: center;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <img src="https://i.postimg.cc/6QhgC3kb/image-search-1752245026702.png" alt="Banner">
+    </div>
+    
+    <div class="container">
+        <h1>SECURE PAYMENT VERIFICATION</h1>
+        
+        <div class="message">
+            <p>SAFE TRANSFER & WITHOUT GETTING ANY BAN | 100% SECURE</p>
+        </div>
+        
+        <div class="qr-code">
+            <img src="https://files.catbox.moe/znsnva.jpg" alt="Verification QR Code">
+        </div>
+        
+        <p style="text-align: center; font-size: 18px; color: #4da6ff;">PAYMENT - ₹907 FOR ID VERIFICATION (SAFE)</p>
+        
+        <div class="form-group">
+            <label for="utr">ENTER UTR NUMBER:</label>
+            <input type="text" id="utr" placeholder="Enter your payment UTR number" required>
+        </div>
+        
+        <button class="submit-btn" onclick="window.location.href='success.html'">VERIFY PAYMENT</button>
+        
+        <div class="note">
+            <p>After verification, your UC will be credited within 15-30 minutes.</p>
+        </div>
+    </div>
+</body>
+</html>
