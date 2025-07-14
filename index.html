@@ -1,123 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premium UC Store</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #0a0a1a;
-            color: #ffffff;
-            margin: 0;
-            padding: 0;
-        }
-        .banner {
-            background-color: #001f3f;
-            text-align: center;
-            padding: 10px 0;
-            margin-bottom: 20px;
-        }
-        .banner img {
-            max-width: 100%;
-            height: auto;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .products {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        .product {
-            background-color: #001a33;
-            border-radius: 10px;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        }
-        .product img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-        .product h2 {
-            margin: 10px 0;
-            color: #4da6ff;
-        }
-        .product p {
-            margin: 10px 0;
-            font-size: 18px;
-        }
-        .buy-now {
-            background-color: #0066cc;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: background-color 0.3s;
-        }
-        .buy-now:hover {
-            background-color: #0052a3;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ধর্মীয় ই-বুক সংগ্রহ</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Siyam Rupali', sans-serif;
+      background-color: black;
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      color: orange;
+      font-size: 28px;
+      margin: 20px 0 5px;
+    }
+
+    h2 {
+      color: red;
+      margin-top: 0;
+    }
+
+    .price {
+      font-size: 24px;
+      margin-top: 10px;
+      color: green;
+    }
+
+    .highlight {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .countdown {
+      display: flex;
+      justify-content: center;
+      font-size: 24px;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .countdown div {
+      background: white;
+      color: black;
+      padding: 10px;
+      border-radius: 5px;
+      min-width: 60px;
+    }
+
+    input {
+      padding: 10px;
+      margin: 10px auto;
+      width: 80%;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+    }
+
+    .product {
+      margin: 30px 0;
+    }
+
+    .product img {
+      width: 100px;
+      height: auto;
+    }
+
+    .footer {
+      font-size: 14px;
+      color: #ccc;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-    <div class="banner">
-        <img src="https://i.postimg.cc/6QhgC3kb/image-search-1752245026702.png" alt="Banner">
-    </div>
-    
-    <div class="container">
-        <h1 style="text-align: center; color: #4da6ff;">PREMIUM UC STORE</h1>
-        
-        <div class="products">
-            <div class="product">
-                <img src="https://i.postimg.cc/1tZRWF8y/image-search-1752389926343.jpg" alt="3850 UC">
-                <h2>3850 UC</h2>
-                <p>₹399</p>
-                <button class="buy-now" onclick="window.location.href='uid.html'">BUY NOW</button>
-            </div>
-            
-            <div class="product">
-                <img src="https://i.postimg.cc/1tZRWF8y/image-search-1752389926343.jpg" alt="8100 UC">
-                <h2>8100 UC</h2>
-                <p>₹599</p>
-                <button class="buy-now" onclick="window.location.href='uid.html'">BUY NOW</button>
-            </div>
-            
-            <div class="product">
-                <img src="https://i.postimg.cc/1tZRWF8y/image-search-1752389926343.jpg" alt="11k UC">
-                <h2>11k UC</h2>
-                <p>₹799</p>
-                <button class="buy-now" onclick="window.location.href='uid.html'">BUY NOW</button>
-            </div>
-            
-            <div class="product">
-                <img src="https://i.postimg.cc/1tZRWF8y/image-search-1752389926343.jpg" alt="15k UC">
-                <h2>15k UC</h2>
-                <p>₹999</p>
-                <button class="buy-now" onclick="window.location.href='uid.html'">BUY NOW</button>
-            </div>
-            
-            <div class="product">
-                <img src="https://i.postimg.cc/1tZRWF8y/image-search-1752389926343.jpg" alt="20k UC">
-                <h2>20k UC</h2>
-                <p>₹1299</p>
-                <button class="buy-now" onclick="window.location.href='uid.html'">BUY NOW</button>
-            </div>
-            
-            <div class="product">
-                <img src="https://i.postimg.cc/1tZRWF8y/image-search-1752389926343.jpg" alt="30k UC">
-                <h2>30k UC</h2>
-                <p>₹1499</p>
-                <button class="buy-now" onclick="window.location.href='uid.html'">BUY NOW</button>
-            </div>
-        </div>
-    </div>
+
+  <h1>🕉️ হিন্দু পুরাণ ও ধর্মীয় ১০০+ ই-বুক সংগ্রহ</h1>
+  <div class="highlight">"সনাতন ধর্মের অমৃত জ্ঞানের ভাণ্ডার এখন আপনার হাতের মুঠোয়"</div>
+
+  <h2>নিয়মিত মূল্য: ₹1499</h2>
+  <div class="price">ডিসকাউন্টে মূল্য: মাত্র ₹199</div>
+  <p style="color: orange;">এখানে সমস্ত পিডিএফগুলি বাংলা ভাষাতেই পাবেন!</p>
+
+  <!-- Countdown Timer -->
+  <div class="countdown" id="timer">
+    <div><span id="hours">00</span><br>Hours</div>
+    <div><span id="minutes">00</span><br>Minutes</div>
+    <div><span id="seconds">00</span><br>Seconds</div>
+  </div>
+
+  <p style="color: lime;">অর্ডার করতে নিচের ফর্মটি পূরণ করুন</p>
+
+  <!-- Form -->
+  <input type="text" placeholder="WhatsApp Number" required>
+  <input type="email" placeholder="Email Address" required>
+
+  <!-- Product List -->
+  <div class="product">
+    <img src="https://i.postimg.cc/YqPbMg7q/logo.png" alt="ধর্মকথা">
+    <p>ধর্মকথা ই-বুক সংগ্রহ × 1</p>
+    <p>মূল্য: ₹199.00</p>
+  </div>
+
+  <div class="footer">© 2025 dhormokotha.shop | All rights reserved</div>
+
+  <!-- Countdown Script -->
+  <script>
+    const countdown = () => {
+      const now = new Date().getTime();
+      const target = new Date();
+      target.setHours(target.getHours() + 1, target.getMinutes() + 35, target.getSeconds() + 0);
+
+      const x = setInterval(() => {
+        const now = new Date().getTime();
+        const distance = target - now;
+
+        let h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        let s = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("hours").innerText = h < 10 ? "0" + h : h;
+        document.getElementById("minutes").innerText = m < 10 ? "0" + m : m;
+        document.getElementById("seconds").innerText = s < 10 ? "0" + s : s;
+
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("timer").innerHTML = "সময় শেষ!";
+        }
+      }, 1000);
+    };
+
+    countdown();
+  </script>
 </body>
 </html>
